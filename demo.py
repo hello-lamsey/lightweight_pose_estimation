@@ -4,11 +4,11 @@ import cv2
 import numpy as np
 import torch
 
-from models.with_mobilenet import PoseEstimationWithMobileNet
-from modules.keypoints import extract_keypoints, group_keypoints
-from modules.load_state import load_state
-from modules.pose import Pose, track_poses
-from val import normalize, pad_width
+from lightweight_pose_estimation.models.with_mobilenet import PoseEstimationWithMobileNet
+from lightweight_pose_estimation.modules.keypoints import extract_keypoints, group_keypoints
+from lightweight_pose_estimation.modules.load_state import load_state
+from lightweight_pose_estimation.modules.pose import Pose, track_poses
+from lightweight_pose_estimation.train.val import normalize, pad_width
 
 
 class ImageReader(object):

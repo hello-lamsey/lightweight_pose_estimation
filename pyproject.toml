@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lightweight_pose_estimation"
+version = "0.1.0"
+dependencies = [
+    "torch>=0.4.1",
+    "torchvision>=0.2.1",
+    "pycocotools==2.0.0",
+    "opencv-python>=3.4.0.14",
+    "numpy>=1.14.0",
+    "matplotlib",
+]
+
+[tool.setuptools]
+packages = ["lightweight_pose_estimation"]
+package-dir = {"" = "src"}
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
